@@ -1,0 +1,10 @@
+project_name: "Slice TEMP NANO S2L r2" # template: ensure this gets updated when copying
+output_dir: "Generated"
+artifacts:
+  - Schematic.pdf
+  - PCB.pdf
+  - kibot.log
+  - BoM/*.html
+images:
+  - board_top.png
+  - board_bottom.png
