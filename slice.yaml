@@ -1,0 +1,157 @@
+schema_version: "1.0"
+
+# ── Identity ──────────────────────────────────────────────────────────────────
+id: "slice-ioac"
+name: "Analog I/O Conditioning"
+status: "concept"
+category: "interface"
+
+summary: "Mixed analog signal conditioning slice with protected inputs, buffered outputs, and isolated digital I/O."
+description: null
+
+# ── Versioning ────────────────────────────────────────────────────────────────
+version:
+  hardware: "0.1.0"
+  firmware: null
+  manifest: "0.1.0"
+
+# ── Compatibility ─────────────────────────────────────────────────────────────
+compatibility:
+  slice_spec: ">=0.1.0 <0.2.0"
+  crumbs_protocol: null
+  anolis_provider_api: null
+
+# ── Hardware ──────────────────────────────────────────────────────────────────
+hardware:
+  mcu:
+    type: "dev-board-socket"
+    form_factor: "nano"
+    primary: "ATmega328P"
+    supported:
+      - "ATmega328P"
+  primary_ic: null
+  hw_gen_current: 1
+  hw_gen_supported: [1]
+  pcb:
+    layers: 2
+    thickness: "1.6mm"
+    copper_weight: "1oz"
+    dimensions: "70mm x 100mm"
+  connectors:
+    - ref: "J1"
+      type: "slice-bus-10pin"
+      purpose: "power-and-i2c"
+  mounting:
+    pattern: "slice-standard-v0"
+    hole_size: "M3"
+    inset: "5mm"
+  pcb_color_prototype: null
+  pcb_color_production: null
+  enclosure:
+    supported: false
+    path: null
+
+# ── Electrical ────────────────────────────────────────────────────────────────
+electrical:
+  input_voltage: "12V"
+  logic_voltage: "5V"
+  max_current: null
+  protection: null
+  isolation: null
+
+# ── Interfaces ────────────────────────────────────────────────────────────────
+interfaces:
+  host:
+    type: "i2c"
+    address_default: null
+    address_configurable: false
+  data:
+    inputs:
+      - name: "AIN1"
+        type: "analog-voltage"
+      - name: "AIN2"
+        type: "analog-voltage"
+      - name: "DIN1"
+        type: "opto-isolated-digital"
+      - name: "DIN2"
+        type: "opto-isolated-digital"
+    outputs:
+      - name: "AOUT1"
+        type: "buffered-analog"
+      - name: "DOUT1"
+        type: "protected-digital"
+      - name: "DOUT2"
+        type: "protected-digital"
+
+# ── Capabilities ──────────────────────────────────────────────────────────────
+capabilities:
+  - id: "analog_input"
+    channels: 2
+    control_modes: []
+  - id: "analog_output"
+    channels: 1
+    control_modes: []
+  - id: "digital_io"
+    channels: 4
+    control_modes: []
+
+# ── Firmware ──────────────────────────────────────────────────────────────────
+firmware: null
+
+# ── Protocol ──────────────────────────────────────────────────────────────────
+protocol: null
+
+# ── Software ──────────────────────────────────────────────────────────────────
+software: null
+
+# ── Artifacts ─────────────────────────────────────────────────────────────────
+artifacts:
+  schematic: "hardware/BREAD_Slice.kicad_sch"
+  pcb: "hardware/BREAD_Slice.kicad_pcb"
+  firmware: null
+  docs: "docs/"
+  bom: null
+  gerbers: null
+  pick_and_place: null
+  datasheets: []
+
+# ── Manufacturing ─────────────────────────────────────────────────────────────
+manufacturing: null
+
+# ── Validation ────────────────────────────────────────────────────────────────
+validation: null
+
+# ── Safety ────────────────────────────────────────────────────────────────────
+safety: null
+
+# ── Dependencies ──────────────────────────────────────────────────────────────
+dependencies: null
+
+# ── Relations ─────────────────────────────────────────────────────────────────
+related: null
+
+# ── Maintainers ───────────────────────────────────────────────────────────────
+maintainers:
+  - name: "Cameron Brooks"
+    role: "owner"
+
+# ── License ───────────────────────────────────────────────────────────────────
+license:
+  hardware: "CERN-OHL-S-2.0"
+  firmware: null
+  software: null
+  docs: "CC-BY-4.0"
+
+# ── Repository ────────────────────────────────────────────────────────────────
+repository:
+  url: "https://github.com/feastorg/Slice_IOAC"
+
+# ── Metadata ──────────────────────────────────────────────────────────────────
+metadata:
+  created: "2026-05-19"
+  updated: "2026-05-19"
+  tags:
+    - "analog-io"
+    - "signal-conditioning"
+    - "mixed-signal"
+    - "data-acquisition"
