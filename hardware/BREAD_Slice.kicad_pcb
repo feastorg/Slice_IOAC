@@ -1024,7 +1024,7 @@
 			)
 		)
 	)
-	(footprint "kml-custom:WS2812-5050-4PIN"
+	(footprint "KMLib_IC_SMD:WS2812-5050-4PIN"
 		(locked yes)
 		(layer "F.Cu")
 		(uuid "1b32b351-da69-4c22-bcb7-dfcdcb638507")
@@ -1331,7 +1331,7 @@
 			)
 		)
 	)
-	(footprint "kml-custom:Arduino_Nano_Headers"
+	(footprint "KMLib_Boards_Modules:Arduino_Nano_Headers"
 		(layer "F.Cu")
 		(uuid "23a75c40-4a0c-42bb-8a75-a076ac0bb102")
 		(at 142.61 97.44)
@@ -2067,7 +2067,7 @@
 			)
 		)
 	)
-	(footprint "kml-custom:OSHW_Logo_8mm"
+	(footprint "KMLib_Aesthetic:OSHW_Logo_8mm"
 		(layer "F.Cu")
 		(uuid "3ca9a400-76c6-4929-a99e-31634ddcafa0")
 		(at 135.950001 107.8 -90)
@@ -2332,7 +2332,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "kml-custom:FAST-Logo-Medium"
+	(footprint "KMLib_Aesthetic:FAST-Logo-Medium"
 		(layer "F.Cu")
 		(uuid "4307db7d-8439-4b96-8485-158f468937f6")
 		(at 130.1 70.3 -90)
@@ -5383,7 +5383,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "kml-custom:Thermal Pad"
+	(footprint "KMLib_Mounting:Thermal_Pad"
 		(layer "F.Cu")
 		(uuid "ff0746ca-ee75-4258-93a6-03b7acad5056")
 		(at 131.8 121.45)
@@ -5889,7 +5889,7 @@
 			)
 		)
 	)
-	(footprint "kml-custom:SOIC_05WU-7_DIO-M"
+	(footprint "KMLib_IC_SMD:SOIC_05WU-7_DIO-M"
 		(layer "B.Cu")
 		(uuid "7c75ad79-f579-496e-8d99-209b4ec3018d")
 		(at 128.75 122.755)
