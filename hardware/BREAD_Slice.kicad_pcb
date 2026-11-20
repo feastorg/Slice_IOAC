@@ -126,68 +126,6 @@
 			(outputdirectory "Gerbers/")
 		)
 	)
-	(footprint ""
-		(layer "F.Cu")
-		(uuid "1106f88a-baec-4e5f-9307-5468c4c8874c")
-		(at 137.5 86.275)
-		(property "Reference" ""
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(uuid "f87f0a68-5eb8-4d0e-82bb-957363b5d6e2")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "9b67fa34-1b95-456c-9f58-33224f0fa08e")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "93bd342e-aaa5-4229-9c71-551d3a178049")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "89dd544c-2a79-472d-bf47-2e9100732c6a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(duplicate_pad_numbers_are_jumpers no)
-		(pad "2" smd roundrect
-			(at 0 0 270)
-			(size 3.5 1.6)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.15625)
-			(net "GND")
-			(pintype "passive")
-			(uuid "f1b79c6f-2754-487c-9b74-791a2c069925")
-		)
-		(embedded_fonts no)
-	)
 	(footprint "MountingHole:MountingHole_5mm"
 		(locked yes)
 		(layer "F.Cu")
