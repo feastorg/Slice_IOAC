@@ -5197,7 +5197,7 @@
 		)
 		(uuid "1ba0c2ac-bfdd-4f7f-8562-7928e28a010a")
 	)
-	(label "INT"
+	(label "SYNC"
 		(at 38.1 78.74 180)
 		(effects
 			(font
@@ -5227,7 +5227,7 @@
 		)
 		(uuid "20695408-a282-4b2b-b074-20adeed2a295")
 	)
-	(label "INT{slash}CAN_{CS}"
+	(label "SYNC{slash}CAN_{CS}"
 		(at 205.74 76.2 0)
 		(effects
 			(font
@@ -5267,7 +5267,7 @@
 		)
 		(uuid "712340c4-ef8e-405e-b24b-7a0ef1731972")
 	)
-	(label "SYNC{slash}CAN_{INT}"
+	(label "INT{slash}CAN_{INT}"
 		(at 205.74 73.66 0)
 		(effects
 			(font
@@ -5327,7 +5327,7 @@
 		)
 		(uuid "b5ec7da3-7a24-4a1c-8995-50fd56d98c73")
 	)
-	(label "SYNC"
+	(label "INT"
 		(at 38.1 76.2 180)
 		(effects
 			(font
